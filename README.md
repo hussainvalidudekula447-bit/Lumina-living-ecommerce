@@ -124,7 +124,7 @@ Visit **[http://localhost:5000](http://localhost:5000)** to explore the storefro
 
 ## 👨‍💻 Author
 
-- **Hussain Vali Dudekula**
+- **Hussain Dudekula**
 - GitHub: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
 
 ---
