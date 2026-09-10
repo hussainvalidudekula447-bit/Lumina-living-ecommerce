@@ -7,6 +7,8 @@
 
 An editorial luxury home decor and artisanal furniture e-commerce experience built with **Vanilla HTML5/CSS3/JavaScript** frontend and a lightweight **Python 3** REST API backend.
 
+![Lumina Living Preview](public/images/preview.png)
+
 ---
 
 ## 🌟 Key Features
@@ -44,13 +46,10 @@ An editorial luxury home decor and artisanal furniture e-commerce experience bui
 - [Python 3.8+](https://www.python.org/)
 
 ### 2. Run the Application
-Navigate into the project directory:
+Clone the repository and run the server:
 ```bash
-cd Lumina-Living
-```
-
-Start the Python server:
-```bash
+git clone https://github.com/hussainvalidudekula447-bit/lumina-living-ecommerce.git
+cd lumina-living-ecommerce
 python server.py
 ```
 
@@ -79,6 +78,11 @@ http://localhost:5000
 - `LUMINA15` &rarr; 15% Off Lumina Living Collection
 - `HOMELUXE20` &rarr; 20% Off Luxury Furniture & Decor
 - `WELCOME10` &rarr; 10% Welcome Gift
+
+---
+
+## 👨‍💻 Author
+- GitHub: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
 
 ---
 
