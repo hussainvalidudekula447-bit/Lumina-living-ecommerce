@@ -1,0 +1,71 @@
+[
+  {
+    "id": "LUM-62236",
+    "createdAt": "2026-09-10T17:06:09.282141Z",
+    "customer": {
+      "fullName": "Sarah Jenkins",
+      "email": "sarah@lumina.test",
+      "phone": "N/A",
+      "address": "42 Organic Meadow",
+      "city": "Portland",
+      "state": "N/A",
+      "zip": "N/A",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "lum-101",
+        "name": "Nordic Travertine & Brass Table Lamp",
+        "price": 185.0,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80"
+      }
+    ],
+    "subtotal": 185.0,
+    "discountAmount": 27.75,
+    "promoCode": "LUMINA15",
+    "tax": 12.58,
+    "shipping": 0.0,
+    "total": 169.83,
+    "paymentMethod": "Credit Card",
+    "status": "Confirmed & In Artisan Preparation"
+  },
+  {
+    "id": "LUM-72109",
+    "createdAt": "2026-09-10T15:00:00.000Z",
+    "customer": {
+      "fullName": "Elena Rostova",
+      "email": "elena.design@example.com",
+      "phone": "+1 (555) 839-2041",
+      "address": "450 Bellevue Avenue, Suite 12",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101",
+      "country": "United States"
+    },
+    "items": [
+      {
+        "id": "lum-101",
+        "name": "Nordic Travertine & Brass Table Lamp",
+        "price": 185.0,
+        "quantity": 1,
+        "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80"
+      },
+      {
+        "id": "lum-104",
+        "name": "Terracotta & Clay Artisan Amphora Vase",
+        "price": 75.0,
+        "quantity": 2,
+        "image": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=800&q=80"
+      }
+    ],
+    "subtotal": 335.0,
+    "discountAmount": 50.25,
+    "promoCode": "LUMINA15",
+    "tax": 22.78,
+    "shipping": 0,
+    "total": 307.53,
+    "paymentMethod": "Credit Card (Simulated)",
+    "status": "In Preparation"
+  }
+]

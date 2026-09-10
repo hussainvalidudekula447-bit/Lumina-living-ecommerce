@@ -1,0 +1,157 @@
+[
+  {
+    "id": "lum-101",
+    "name": "Nordic Travertine & Brass Table Lamp",
+    "category": "lighting",
+    "price": 185.0,
+    "originalPrice": 220.0,
+    "rating": 4.9,
+    "reviewsCount": 86,
+    "badge": "Artisan Choice",
+    "stock": 11,
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+    "description": "Hand-carved Italian travertine stone base paired with a solid brushed brass stem and pleated linen shade. Casts a warm, ambient glow ideal for bedside tables and quiet reading corners.",
+    "specs": {
+      "Base Material": "Natural Italian Travertine Stone",
+      "Metal Accents": "Brushed Solid Brass",
+      "Shade": "Handmade Pleated Flax Linen",
+      "Dimensions": "14\" W x 22\" H (Base: 6\" D)",
+      "Bulb Type": "E26 Warm LED (included, 2700K)",
+      "Weight": "4.8 kg"
+    },
+    "features": [
+      "Integrated 3-step rotary brass dimmer",
+      "Braided taupe fabric power cord (6 ft)",
+      "Each piece features unique natural travertine mineral veins",
+      "FSC-certified sustainable packaging"
+    ]
+  },
+  {
+    "id": "lum-102",
+    "name": "Aura Curved Boucl\u00e9 Lounge Chair",
+    "category": "seating",
+    "price": 540.0,
+    "originalPrice": 620.0,
+    "rating": 4.8,
+    "reviewsCount": 42,
+    "badge": "Bestseller",
+    "stock": 7,
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    "description": "An organic, sculptural silhouette wrapped in high-density tactile cream boucl\u00e9 fabric. Supported by an internal kiln-dried FSC hardwood frame with plush pocket coil cushioning.",
+    "specs": {
+      "Upholstery": "Heavyweight Tactile Boucl\u00e9 (100% Wool Blend)",
+      "Frame": "Kiln-Dried Solid Birch & European Oak",
+      "Seat Cushion": "High-Resiliency Foam + Pocket Coils",
+      "Dimensions": "34\" W x 32\" D x 30\" H (Seat Height: 17\")",
+      "Weight Capacity": "350 lbs",
+      "Assembly": "Fully Assembled on Delivery"
+    },
+    "features": [
+      "Stain-resistant fiber protection treatment",
+      "Gentle barrel-back embrace for ergonomic lounging",
+      "Concealed protective nylon floor glides",
+      "Designed in Copenhagen"
+    ]
+  },
+  {
+    "id": "lum-103",
+    "name": "Elysian Fluted Oak Coffee Table",
+    "category": "tables",
+    "price": 420.0,
+    "originalPrice": 480.0,
+    "rating": 4.7,
+    "reviewsCount": 38,
+    "badge": "Featured",
+    "stock": 9,
+    "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=800&q=80",
+    "description": "Showcasing architectural fluting around a circular solid white oak pedestal, topped with a satin matte natural wood finish that celebrates rich organic grain patterns.",
+    "specs": {
+      "Wood Species": "Solid European White Oak & Oak Veneer",
+      "Finish": "Water-based Matte Satin Polyurethane",
+      "Dimensions": "36\" Diameter x 16\" Height",
+      "Weight": "28 kg",
+      "Care": "Wipe with damp microfiber cloth"
+    },
+    "features": [
+      "Hand-fluted tambour detailing around base perimeter",
+      "Beveled edge table top for an airy profile",
+      "Zero formaldehyde emissions (CARB Phase 2 compliant)",
+      "Non-slip silicone leveling feet"
+    ]
+  },
+  {
+    "id": "lum-104",
+    "name": "Terracotta & Clay Artisan Amphora Vase",
+    "category": "decor",
+    "price": 75.0,
+    "originalPrice": 95.0,
+    "rating": 4.9,
+    "reviewsCount": 115,
+    "badge": "Handmade",
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=800&q=80",
+    "description": "Wheel-thrown by master potters using high-fire stoneware clay with a raw unglazed exterior texture and a glazed, waterproof interior ready for fresh botanicals or dried pampas.",
+    "specs": {
+      "Clay": "Coarse Red Stoneware with Mineral Flecks",
+      "Finish": "Raw Textured Exterior / Gloss Glazed Interior",
+      "Dimensions": "8.5\" W x 14\" H (Opening: 3.5\")",
+      "Waterproof": "100% Watertight for Fresh Florals",
+      "Origin": "Andalusia, Spain"
+    },
+    "features": [
+      "Dual sculptural handles inspired by antique Mediterranean pottery",
+      "Felt padded base to safeguard wood tabletops",
+      "Signature maker's stamp on underside"
+    ]
+  },
+  {
+    "id": "lum-105",
+    "name": "Serenade Organic Linen Duvet & Sham Set",
+    "category": "bedroom",
+    "price": 210.0,
+    "originalPrice": 250.0,
+    "rating": 4.8,
+    "reviewsCount": 79,
+    "badge": "100% Organic",
+    "stock": 15,
+    "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+    "description": "Woven from 100% French flax linen, pre-washed for irresistible cloud-like softness. Naturally breathable and temperature-regulating for deep, luxurious sleep across all four seasons.",
+    "specs": {
+      "Material": "100% Certified French Flax Linen (175 GSM)",
+      "Set Includes": "1x Duvet Cover + 2x Pillow Shams",
+      "Sizes Available": "Queen / King",
+      "Closure": "Natural Coconut Shell Buttons & Corner Ties",
+      "Certification": "OEKO-TEX Standard 100 Certified"
+    },
+    "features": [
+      "Grows softer and more supple with every home wash",
+      "Hypoallergenic and naturally moisture-wicking",
+      "Interior 8-point corner ties prevent comforter bunching"
+    ]
+  },
+  {
+    "id": "lum-106",
+    "name": "Komorebi Cast Bronze Mirror",
+    "category": "decor",
+    "price": 295.0,
+    "originalPrice": 340.0,
+    "rating": 4.9,
+    "reviewsCount": 53,
+    "badge": "New Arrival",
+    "stock": 8,
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+    "description": "An asymmetrical, pebble-shaped accent mirror framed in cast aluminum with an antique bronze patina. Reflects natural daylight into dining rooms, foyers, and master suites.",
+    "specs": {
+      "Frame": "Hand-Cast Solid Aluminum with Antique Bronze Patina",
+      "Glass": "4mm High-Definition Distortion-Free Silver Mirror",
+      "Dimensions": "26\" W x 38\" H x 1.5\" D",
+      "Weight": "7.5 kg",
+      "Mounting": "Multi-directional heavy-duty D-rings included"
+    },
+    "features": [
+      "Can be hung vertically or horizontally",
+      "Safety shatter-proof backing membrane",
+      "Textured hand-chiseled frame edge"
+    ]
+  }
+]

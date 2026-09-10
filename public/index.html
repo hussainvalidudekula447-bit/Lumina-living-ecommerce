@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Living — Curated Home Decor & Artisanal Furniture</title>
+  <meta name="description" content="Elegantly crafted furniture, hand-thrown ceramics, ambient lighting, and organic textiles." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <span>🌿 <strong>SPRING SALON:</strong> Complimentary White Glove Delivery on orders over $150 | Use code <strong class="promo-click" onclick="applyPromoQuick('LUMINA15')">LUMINA15</strong></span>
+      <div class="top-bar-links">
+        <a href="javascript:void(0)" onclick="openOrdersModal()"><i class="fa-solid fa-compass"></i> Track Order</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand">
+        <span class="brand-title">LUMINA</span>
+        <span class="brand-tag">LIVING & ATELIER</span>
+      </a>
+
+      <!-- Search Input -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search-input" placeholder="Search handcrafted lamps, bouclé chairs, vases..." />
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button class="icon-nav-btn" onclick="openOrdersModal()" title="Order History">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Orders</span>
+        </button>
+        <button class="cart-pill-btn" onclick="openCartDrawer()">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Bag</span>
+          <span class="cart-pill-count" id="cart-badge-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Editorial Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-text-block">
+        <span class="hero-eyebrow">The 2026 Atelier Collection</span>
+        <h1 class="hero-heading">Harmonious spaces, <em>sculpted with intention.</em></h1>
+        <p class="hero-paragraph">
+          Thoughtfully curated architectural lighting, sustainable natural oak, and wheel-thrown ceramic objects designed to bring quiet warmth into everyday living.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#collection" class="btn btn-warm">Explore Collection <i class="fa-solid fa-arrow-down-long"></i></a>
+          <button class="btn btn-outline-warm" onclick="filterByCategory('lighting')">Lighting Series</button>
+        </div>
+      </div>
+
+      <div class="hero-image-block">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Lumina Bouclé Chair" class="hero-main-image" />
+          <div class="hero-curator-card">
+            <h5>Aura Curved Bouclé Lounge Chair</h5>
+            <span>Handmade in Solid Birch • $540.00</span>
+            <button class="curator-btn" onclick="openProductModal('lum-102')">View Object &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog Section -->
+  <main class="catalog-section" id="collection">
+    <div class="container">
+      
+      <!-- Catalog Controls -->
+      <div class="collection-header">
+        <div class="room-filters" id="room-filters">
+          <button class="filter-tab active" data-category="all">All Pieces</button>
+          <button class="filter-tab" data-category="lighting">Lighting</button>
+          <button class="filter-tab" data-category="seating">Seating</button>
+          <button class="filter-tab" data-category="tables">Tables</button>
+          <button class="filter-tab" data-category="decor">Ceramics & Decor</button>
+          <button class="filter-tab" data-category="bedroom">Bedroom</button>
+        </div>
+
+        <div class="sort-box">
+          <label for="sort-select">Sort by:</label>
+          <select id="sort-select" class="editorial-select">
+            <option value="featured">Featured Curations</option>
+            <option value="price-asc">Price: Ascending</option>
+            <option value="price-desc">Price: Descending</option>
+            <option value="rating">Highest Rated</option>
+            <option value="name-asc">Alphabetical (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Result Count Info -->
+      <div class="results-info">
+        <span id="results-count-text">Displaying all curated objects</span>
+        <button id="clear-filters-btn" class="text-btn" style="display: none;" onclick="resetAllFilters()">Reset Filters</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="catalog-grid" id="catalog-grid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-box" id="empty-state" style="display: none;">
+        <i class="fa-regular fa-compass"></i>
+        <h3>No pieces match your search</h3>
+        <p>Please try a different search phrase or explore our complete catalog.</p>
+        <button class="btn btn-warm" onclick="resetAllFilters()">View All Objects</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Editorial Philosophy Section -->
+  <section class="philosophy-section">
+    <div class="container philosophy-grid">
+      <div class="philosophy-item">
+        <span class="philosophy-num">01</span>
+        <h4>Sustainably Sourced</h4>
+        <p>FSC-certified hardwoods, non-toxic waterborne sealants, and certified French flax linen.</p>
+      </div>
+      <div class="philosophy-item">
+        <span class="philosophy-num">02</span>
+        <h4>Master Artisanship</h4>
+        <p>Hand-carved Italian travertine, wheel-thrown clays, and custom upholstery crafted for longevity.</p>
+      </div>
+      <div class="philosophy-item">
+        <span class="philosophy-num">03</span>
+        <h4>White Glove Delivery</h4>
+        <p>Inspected, packaged with eco-friendly protective materials, and delivered directly into your room of choice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="brand-title" style="color: #c5a880;">LUMINA</span>
+        <p class="footer-blurb">
+          Timeless furniture and artisanal interior objects crafted to inspire serene, contemplative living spaces.
+        </p>
+      </div>
+      <div>
+        <h5>Collections</h5>
+        <ul class="footer-nav">
+          <li><a href="javascript:void(0)" onclick="filterByCategory('lighting')">Sculptural Lighting</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('seating')">Tactile Seating</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('tables')">Fluted Oak Tables</a></li>
+          <li><a href="javascript:void(0)" onclick="filterByCategory('decor')">Handmade Stoneware</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Client Concierge</h5>
+        <ul class="footer-nav">
+          <li><a href="javascript:void(0)" onclick="openOrdersModal()">Order Tracking</a></li>
+          <li><a href="javascript:void(0)" onclick="openCartDrawer()">Shopping Bag</a></li>
+          <li><a href="#collection">Care Guidelines</a></li>
+          <li><a href="#collection">Custom Trade Program</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Lumina Gazette</h5>
+        <p class="footer-blurb">Subscribe to receive private invitations to seasonal atelier collections.</p>
+        <form onsubmit="event.preventDefault(); showToast('Thank you for subscribing to Lumina Gazette', 'success'); this.reset();" class="newsletter-wrap">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn-warm-sm">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-bar">
+        <p>&copy; 2026 Lumina Living Atelier. Powered by Python Backend & Vanilla Web Stack.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODALS & DRAWERS -->
+  <!-- ============================================== -->
+
+  <!-- Product Detail Modal -->
+  <div class="modal-layer" id="product-modal-layer">
+    <div class="modal-box product-modal-box">
+      <button class="modal-close" onclick="closeProductModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div id="product-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="drawer-overlay" id="cart-overlay" onclick="closeCartDrawer()"></div>
+  <aside class="cart-slideout" id="cart-drawer">
+    <div class="slideout-header">
+      <h4>Shopping Bag <span id="cart-drawer-count" class="text-muted">(0)</span></h4>
+      <button class="modal-close" onclick="closeCartDrawer()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="slideout-items" id="cart-items-container">
+      <!-- Injected by JS -->
+    </div>
+
+    <div class="slideout-footer" id="cart-footer">
+      <div class="promo-area">
+        <div class="promo-input-box">
+          <input type="text" id="promo-input" placeholder="Promo code (e.g. LUMINA15)" />
+          <button onclick="applyPromoCode()">Apply</button>
+        </div>
+        <div id="promo-badge-box" class="promo-badge-box" style="display: none;">
+          <span id="promo-code-name"></span>
+          <button onclick="removePromoCode()">&times;</button>
+        </div>
+      </div>
+
+      <div class="cost-summary">
+        <div class="cost-line"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+        <div class="cost-line discount-line" id="discount-line" style="display: none;"><span>Privilege Discount</span><span id="cart-discount" class="text-olive">-$0.00</span></div>
+        <div class="cost-line"><span>Estimated Tax (8%)</span><span id="cart-tax">$0.00</span></div>
+        <div class="cost-line"><span>White Glove Delivery</span><span id="cart-shipping">$0.00</span></div>
+        <div class="cost-line total-line"><span>Estimated Total</span><span id="cart-grand-total">$0.00</span></div>
+      </div>
+
+      <button class="btn btn-warm btn-full" id="checkout-cta-btn" onclick="openCheckoutModal()">
+        Proceed to Checkout &rarr;
+      </button>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div class="modal-layer" id="checkout-modal-layer">
+    <div class="modal-box checkout-box">
+      <div class="checkout-header-bar">
+        <h3>Lumina Atelier Checkout</h3>
+        <button class="modal-close" onclick="closeCheckoutModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="checkout-columns">
+        <form class="checkout-form" onsubmit="submitLuminaOrder(event)">
+          <h5>1. Client & Delivery Destination</h5>
+          <div class="form-row">
+            <input type="text" id="c-name" placeholder="Full Name *" required />
+            <input type="email" id="c-email" placeholder="Email Address *" required />
+          </div>
+          <div class="form-row">
+            <input type="tel" id="c-phone" placeholder="Phone Number" />
+            <input type="text" id="c-address" placeholder="Delivery Street Address *" required />
+          </div>
+          <div class="form-row three-part">
+            <input type="text" id="c-city" placeholder="City *" required />
+            <input type="text" id="c-state" placeholder="State / Region *" required />
+            <input type="text" id="c-zip" placeholder="Postal Code *" required />
+          </div>
+
+          <h5 style="margin-top: 24px;">2. Payment Method</h5>
+          <div class="payment-selection">
+            <label class="pay-radio">
+              <input type="radio" name="payType" value="Credit Card" checked />
+              <span>Credit Card (Simulated Direct Gateway)</span>
+            </label>
+            <label class="pay-radio">
+              <input type="radio" name="payType" value="Wire Transfer" />
+              <span>Direct Atelier Wire Transfer</span>
+            </label>
+          </div>
+
+          <div class="card-demo-box">
+            <input type="text" value="4532 9912 8472 1092" placeholder="Card Number" />
+            <div class="form-row">
+              <input type="text" value="09/28" placeholder="MM/YY" />
+              <input type="text" value="482" placeholder="CVC" />
+            </div>
+          </div>
+
+          <div class="checkout-actions">
+            <button type="button" class="btn btn-outline-warm" onclick="closeCheckoutModal()">Return to Bag</button>
+            <button type="submit" class="btn btn-warm" id="place-order-btn">
+              <span id="place-order-label">Complete Order & Pay <span id="checkout-amount-display">$0.00</span></span>
+            </button>
+          </div>
+        </form>
+
+        <div class="order-preview-panel">
+          <h5>Order Summary</h5>
+          <div id="checkout-items-preview" class="items-preview-scroll"></div>
+          <div id="checkout-totals-preview" class="totals-preview-block"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Receipt / Order Success Modal -->
+  <div class="modal-layer" id="receipt-modal-layer">
+    <div class="modal-box receipt-box">
+      <div class="receipt-top-status">
+        <i class="fa-solid fa-leaf" style="color: #c5a880; font-size: 2.2rem;"></i>
+        <h2>Thank you for your order</h2>
+        <p>Your curated items have been reserved and entered our atelier preparation queue.</p>
+      </div>
+
+      <div class="printable-invoice" id="printable-order-invoice">
+        <div class="invoice-header">
+          <div>
+            <span>Order Reference:</span>
+            <strong id="invoice-order-id" style="color: #a37f51; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem;">LUM-00000</strong>
+          </div>
+          <div>
+            <span>Date:</span>
+            <span id="invoice-order-date"></span>
+          </div>
+        </div>
+
+        <div class="invoice-shipping-info">
+          <div>
+            <strong>Deliver To:</strong>
+            <p id="inv-cust-name"></p>
+            <p id="inv-cust-email"></p>
+            <p id="inv-cust-addr"></p>
+          </div>
+        </div>
+
+        <table class="invoice-table">
+          <thead>
+            <tr>
+              <th>Curated Piece</th>
+              <th>Qty</th>
+              <th>Unit Price</th>
+              <th class="text-right">Total</th>
+            </tr>
+          </thead>
+          <tbody id="invoice-items-tbody"></tbody>
+        </table>
+
+        <div class="invoice-summary-lines" id="invoice-totals-box"></div>
+      </div>
+
+      <div class="receipt-actions">
+        <button class="btn btn-outline-warm" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Receipt</button>
+        <button class="btn btn-warm" onclick="closeReceiptModal()"><i class="fa-solid fa-house"></i> Continue Browsing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orders History & Live Tracking Modal -->
+  <div class="modal-layer" id="orders-modal-layer">
+    <div class="modal-box tracking-box">
+      <div class="checkout-header-bar">
+        <h3>Order Lookup & Atelier Tracking</h3>
+        <button class="modal-close" onclick="closeOrdersModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="lookup-input-bar">
+        <input type="text" id="track-id-input" placeholder="Enter Order Reference (e.g. LUM-72109)" />
+        <button class="btn btn-warm btn-sm" onclick="trackLuminaOrder()">Track</button>
+      </div>
+
+      <div id="tracking-result-box" class="tracking-result-box" style="display: none;"></div>
+
+      <h5 style="margin-top: 24px; margin-bottom: 12px;">Recent Orders</h5>
+      <div class="orders-table-scroll">
+        <table class="orders-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Recipient</th>
+              <th>Total</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="orders-history-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-box" class="toast-box"></div>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
