@@ -11,7 +11,7 @@ from datetime import datetime
 from urllib.parse import urlparse, parse_qs
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-PORT = 5000
+PORT = int(os.environ.get('PORT', 5000))
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PRODUCTS_FILE = os.path.join(BASE_DIR, 'data', 'products.json')
 ORDERS_FILE = os.path.join(BASE_DIR, 'data', 'orders.json')
