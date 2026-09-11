@@ -115,9 +115,6 @@ cd Lumina-living-ecommerce
 python server.py
 ```
 
-### 3. Open in Browser
-Visit **[http://localhost:5000](http://localhost:5000)** to explore the storefront locally.
-
 ---
 
 ## 📡 REST API Endpoints
