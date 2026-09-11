@@ -141,11 +141,27 @@ python server.py
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 About the Author & Developer
 
-- **Hussain Dudekula**
-- GitHub: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
-- Live Store: [lumina-living-ecommerce.onrender.com](https://lumina-living-ecommerce.onrender.com/)
+<div align="left">
+
+### **Dudekula Hussain Vali**
+*AI/ML Enthusiast | Generative AI Developer | Full-Stack Web Developer*
+
+A passionate software developer focused on building scalable full-stack web applications, generative AI systems, and modern, high-performance digital experiences. **Lumina Living** was designed and engineered to showcase editorial luxury styling, native lightweight Python RESTful backend architecture, real-time client state management, and seamless cloud deployment.
+
+#### 🛠️ Core Competencies & Interests
+- **Frontend**: HTML5, Vanilla CSS3 (Editorial/Luxury Design), JavaScript (ES6+), Responsive Layouts
+- **Backend & APIs**: Python 3 (Native HTTP REST Server), Node.js, Express.js, RESTful API Design
+- **AI / Machine Learning**: Generative AI, Large Language Models (LLMs), Machine Learning Workflows
+- **DevOps & Tools**: Git/GitHub, Cloud Deployment (Render), CI/CD Automation
+
+#### 📬 Connect with Me
+- 🐙 **GitHub**: [@hussainvalidudekula447-bit](https://github.com/hussainvalidudekula447-bit)
+- ✉️ **Email**: [hussainvalidudekula447@gmail.com](mailto:hussainvalidudekula447@gmail.com)
+- 🌐 **Live Demo**: [https://lumina-living-ecommerce.onrender.com](https://lumina-living-ecommerce.onrender.com/)
+
+</div>
 
 ---
 
